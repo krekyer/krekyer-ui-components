@@ -1,7 +1,8 @@
 {
-  "name": "is-components-new",
-  "description": "Is components",
-  "version": "0.0.4",
+  "name": "krekyer-ui-components",
+  "description": "Простая Vue 3 библиотека с кнопкой",
+  "author": "krekyer",
+  "version": "0.0.1",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -62,5 +63,9 @@
   "engines": {
     "npm": "11",
     "node": "24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/krekyer/is#"
   }
 }

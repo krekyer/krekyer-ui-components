@@ -1,21 +1,14 @@
-# ИС
+# Моя UI-библиотека
 
-Сделать аккаунт на гитхабе.
-Установить:
-git
-github desktop
-vs code
-node.js 24
+Это моя версия библиотеки компонентов на Vue 3.  
+Сейчас в ней есть только кнопка с тремя стилями:
 
----
+- **primary** — для главных действий
+- **secondary** — для второстепенных
+- **outline** — минималистичная
 
-Склонировать себе на компьютер репозиторий https://github.com/dergunovs/is
+### Установка:
 
-ввести в терминале:
-git clone https://github.com/dergunovs/is.git
-
-открыть появившуюся папку в vs code
-
-открыть терминал в vs code
-
-написать в терминале в vs code: npm install
+```bash
+npm install krekyer-ui-components
+```
