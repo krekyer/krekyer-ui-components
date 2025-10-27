@@ -2,7 +2,7 @@ import { StoryContext } from '@storybook/vue3';
 import { useArgs } from 'storybook/preview-api';
 import { PartialStoryFn } from 'storybook/internal/types';
 
-import '../.storybook/global.css';
+import '../src/styles/main.scss';
 
 export const parameters = { controls: { disableSaveFromUI: true } };
 

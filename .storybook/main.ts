@@ -17,5 +17,3 @@ const config: StorybookConfig = {
 };
 
 export default config;
-
-import '../.storybook/global.css';
