@@ -23,7 +23,12 @@
     "allowJs": true,
     "checkJs": true
   },
-  "include": ["src/**/*", "src/**/*.ts", "src/*.d.ts", "src/components/**/*.vue"],
+  "include": [
+    "src/**/*",
+    "src/**/*.ts",
+    "src/*.d.ts",
+    "src/components/**/*.vue"
+  ],
   "exclude": ["node_modules", "dist", "storybook-static"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -27,8 +27,6 @@ const meta: Meta<typeof UiButton> = {
   },
 };
 
-export default meta;
-
 type Story = StoryObj<typeof UiButton>;
 
 export const Primary: Story = {
@@ -83,3 +81,5 @@ export const Disabled: Story = {
     template: '<UiButton v-bind="args">Disabled Button</UiButton>',
   }),
 };
+
+export default meta;

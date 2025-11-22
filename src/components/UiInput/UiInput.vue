@@ -1,32 +1,11 @@
 <template>
-  <input
-    :class="$style.input"
-    :value="modelValue"
-    @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
-    :disabled="isDisabled"
-    :placeholder="placeholder"
-    :data-disabled="isDisabled"
-  />
-</template>
-
-<script setup lang="ts">
-defineProps<{
-  modelValue: string;
-  isDisabled?: boolean;
-  placeholder?: string;
-}>();
-
-defineEmits<{
-  (e: 'update:modelValue', value: string): void;
-}>();
-</script>
-
-<template>
   <div :class="$style.wrapper">
     <input
       :class="$style.input"
       :value="modelValue"
-      @input="$emit('update:modelValue', ($event.target as HTMLInputElement).value)"
+      @input="
+        $emit('update:modelValue', ($event.target as HTMLInputElement).value)
+      "
       :disabled="isDisabled"
       :placeholder="placeholder"
       :data-disabled="isDisabled"
@@ -57,7 +36,7 @@ defineEmits<{
   padding: 12px 16px;
   font-size: 0.95rem;
   line-height: 1.4;
-  border: 2px solid #d1d5db; // стандартная граница
+  border: 2px solid #d1d5db;
   border-radius: 12px;
   background-color: #ffffff;
   color: #4b5563;

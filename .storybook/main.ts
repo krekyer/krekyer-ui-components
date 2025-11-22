@@ -6,7 +6,9 @@ import type { StorybookConfig } from '@storybook/vue3-vite';
 const requirePath = typeof require === 'undefined' ? import.meta : require;
 
 function getAbsolutePath(packageName: string) {
-  return path.dirname(requirePath.resolve(path.join(packageName, 'package.json'))).replace(/^file:\/\//, '');
+  return path
+    .dirname(requirePath.resolve(path.join(packageName, 'package.json')))
+    .replace(/^file:\/\//, '');
 }
 
 const config: StorybookConfig = {

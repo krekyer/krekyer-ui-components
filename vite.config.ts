@@ -6,7 +6,9 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 import vue from '@vitejs/plugin-vue';
 import svgLoader from 'vite-svg-loader';
 
-const files = fs.readdirSync('./src/components').filter((file) => file.includes('Ui'));
+const files = fs
+  .readdirSync('./src/components')
+  .filter((file) => file.includes('Ui'));
 
 const components = files.reduce<{ [key: string]: string }>((obj, component) => {
   obj[component.split('.')[0]] = `src/components/${component}/${component}.vue`;
@@ -67,13 +69,15 @@ export default defineConfig({
           src: 'src/components/index.ts',
           dest: '',
           rename: 'index.js',
-          transform: (contents) => contents.toString().replace(/.(vue|ts)/g, '.js'),
+          transform: (contents) =>
+            contents.toString().replace(/.(vue|ts)/g, '.js'),
         },
         {
           src: 'src/components/index.ts',
           dest: '',
           rename: 'index.d.ts',
-          transform: (contents) => contents.toString().replace(/.(vue|ts)/g, ''),
+          transform: (contents) =>
+            contents.toString().replace(/.(vue|ts)/g, ''),
         },
       ],
     }),

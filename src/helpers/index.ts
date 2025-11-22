@@ -1,4 +1,7 @@
-export function html(strings: TemplateStringsArray, ...expressions: unknown[]): string {
+export function html(
+  strings: TemplateStringsArray,
+  ...expressions: unknown[]
+): string {
   const result: string[] = [];
 
   for (const [i, string] of strings.entries()) {

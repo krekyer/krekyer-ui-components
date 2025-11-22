@@ -1,5 +1,10 @@
 <template>
-  <button :class="$style.button" :data-layout="props.layout" :disabled="props.isDisabled" :type="props.type">
+  <button
+    :class="$style.button"
+    :data-layout="props.layout"
+    :disabled="props.isDisabled"
+    :type="props.type"
+  >
     <slot></slot>
   </button>
 </template>

@@ -2,7 +2,9 @@
   <select
     :class="$style.select"
     :value="modelValue"
-    @change="$emit('update:modelValue', ($event.target as HTMLSelectElement).value)"
+    @change="
+      $emit('update:modelValue', ($event.target as HTMLSelectElement).value)
+    "
     :disabled="isDisabled"
     :data-disabled="isDisabled"
   >
@@ -19,9 +21,7 @@ defineProps<{
   options: string[];
 }>();
 
-defineEmits<{
-  (e: 'update:modelValue', value: string): void;
-}>();
+defineEmits<(e: 'update:modelValue', value: string) => void>();
 </script>
 
 <style module lang="scss">
