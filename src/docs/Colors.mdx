@@ -1,19 +1,20 @@
 import { ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
 
-# Colors
+# Цветовая палитра
 
 <ColorPalette>
-
 <ColorItem
-  title='Primary'
+  title="Primary"
+  subtitle="Основной акцентный цвет"
   colors={{
     '--color-primary': '#6e8efb',
-    '--color-primary-dark': '#a777e3',
+    '--color-primary-dark': '#5a7be0',
   }}
 />
 
 <ColorItem
-  title='Secondary'
+  title="Secondary"
+  subtitle="Фон и нейтральные элементы"
   colors={{
     '--color-secondary': '#f3f4f6',
     '--color-secondary-dark': '#e5e7eb',
@@ -21,34 +22,24 @@ import { ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
 />
 
 <ColorItem
-  title='Outline'
+  title="Text & Background"
+  subtitle="Текст и фон по умолчанию"
   colors={{
-    '--color-outline': '#6e8efb',
+    '--color-text': '#4b5563',
+    '--color-text-light': '#9ca3af',
+    '--color-background': '#ffffff',
+    '--color-border': '#d1d5db',
   }}
 />
 
 <ColorItem
-  title='Monochrome'
+  title="States"
+  subtitle="Цвета состояний"
   colors={{
-    '--color-white': '#ffffff',
-    '--color-gray-light': '#eeeeee',
-    '--color-gray': '#cccccc',
-    '--color-gray-dark': '#777777',
-    '--color-black': '#000000',
+    '--color-success': '#10b981',
+    '--color-error': '#ef4444',
+    '--color-warning': '#f59e0b',
+    '--color-info': '#3b82f6',
   }}
-/>
-
-<ColorItem
-  title='Success'
-  colors={{
-    '--color-success': '#01bd78',
-  }}
-/>
-
-<ColorItem
-    title='Error'
-    colors={{
-      '--color-error': '#d40019',
-    }}
 />
 </ColorPalette>

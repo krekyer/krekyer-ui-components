@@ -19,9 +19,11 @@
     "allowUnusedLabels": false,
     "types": ["vite/client", "vite-svg-loader", "node"],
     "baseUrl": "./",
-    "noEmit": true
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true
   },
-  "include": ["src/**/*.ts", "src/*.d.ts", "src/components/**/*.vue"],
+  "include": ["src/**/*", "src/**/*.ts", "src/*.d.ts", "src/components/**/*.vue"],
   "exclude": ["node_modules", "dist", "storybook-static"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

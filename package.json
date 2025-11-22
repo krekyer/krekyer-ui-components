@@ -1,8 +1,8 @@
 {
   "name": "krekyer-ui-components",
-  "description": "Простая Vue 3 библиотека с кнопкой",
+  "description": "Библиотека компонентов vue krekyer",
   "author": "krekyer",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -66,6 +66,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/krekyer/is#"
+    "url": "https://github.com/krekyer/krekyer-ui-components"
   }
 }
