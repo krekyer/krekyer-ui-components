@@ -41,6 +41,7 @@ defineEmits<{
   background-color: #ffffff;
   color: #4b5563;
   transition: all 0.2s ease;
+  box-sizing: border-box;
 
   &:focus {
     outline: none;

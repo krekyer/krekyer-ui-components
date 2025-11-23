@@ -31,7 +31,7 @@ defineEmits<(e: 'update:modelValue', value: string) => void>();
   font-size: 0.95rem;
   line-height: 1.4;
   border: 2px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-radius: 12px;
   background-color: var(--color-background);
   color: var(--color-text);
   appearance: none;
@@ -51,15 +51,8 @@ defineEmits<(e: 'update:modelValue', value: string) => void>();
     background-color: var(--color-secondary);
   }
 
-  // Стилизация стрелки (опционально, можно использовать кастомную)
   &::-ms-expand {
     display: none;
-  }
-
-  // Для Firefox
-  &:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
   }
 }
 </style>
